@@ -1,0 +1,68 @@
+.content{
+  background: $white-bg-color;
+  width: 100%;
+  &__subscription{
+    max-width: three-hundred-and-ninety-four-px();
+    height: 597px;
+    margin: 0 auto;
+  }
+  &__email{
+    padding-top: 60px;
+  }
+  &__suptitle{
+    color: $grayish-color;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  &__word{
+    color: $grayish-color;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 45px;
+  }
+  &__label{
+    color: $grayish-color;
+    font-size: 14px;
+  }
+  &__group{
+    .error{
+      color: #e43030;
+    }
+  }
+  &__mail.error{
+    border: 1px solid #e43030;
+    outline: 0;
+  }
+  &__mail{
+    background-color: $white-color;
+    box-shadow: 0 5px 5px 0.5px rgba(23, 24, 25, 0.05);
+    width: 100%;
+    padding: 18px 20px;
+    border: none;
+    color: $black-color;
+    font-size: 14px;
+    box-sizing: border-box;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  &__button{
+    color: $white-color;
+    background-color: $red-bg-color;
+    font-size: 14px;
+    font-weight: bold;
+    outline: 0;
+    border: none;
+    padding: 16px 22px;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    &:hover{
+      box-shadow: 0 13px 22px 2px rgba(250, 25, 25, 0.45);
+      text-decoration: none;
+      color: $white-color;
+      transition: box-shadow linear 0.3s;
+    }
+  }
+}

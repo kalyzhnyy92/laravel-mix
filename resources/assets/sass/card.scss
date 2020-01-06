@@ -1,0 +1,142 @@
+.card{
+  display: block;
+  position: relative;
+  max-width: three-hundred-thirty-five-px();
+  cursor: pointer;
+  border-radius: 0;
+  transition: box-shadow linear 0.3s;
+  overflow: hidden;
+  &:hover{
+    box-shadow: 0 5px 4.6px 0.4px rgba(23, 24, 25, 0.5);
+  }
+  &__house{
+    position: relative;
+    width: 100%;
+    height: 242px;
+    overflow: hidden;
+    z-index: 2;
+    display: block;
+    &:after{
+      @include absolute-full;
+      display: block;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+      pointer-events: none!important;
+    }
+  }
+  &__house{
+    &:hover{
+      .slick{
+        &-prev{
+          left: 0;
+        }
+        &-next {
+          right: 0;
+        }
+      }
+    }
+  }
+  &__img{
+    height: 242px;
+    object-fit: cover;
+    width: 100%;
+    display: block;
+  }
+  &__label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+  }
+  &__text{
+    font-size: 15px;
+    color: $white-color;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    line-height: 20px;
+    width: 100%;
+    padding: 15px;
+    z-index: 1;
+    &:hover {
+      color: $red-bg-color;
+      text-decoration: none;
+    }
+  }
+  &__adres{
+    padding: 15px 23px;
+    position: relative;
+  }
+  &__decision{
+    display: inline-block;
+    color: $gray-color;
+    font-size: 12px;
+  }
+  &-front{
+    position: relative;
+    padding: 5px 15px;
+    background: $color-yellow;
+    font-size: 14px;
+    color: $grayish-color;
+    font-weight: bold;
+    text-transform: uppercase;
+    &:before{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 100%;
+      border-top: 10px solid $color-yellow;
+      border-right: 10px solid transparent;
+    }
+  }
+  &-place{
+    font-size: 14px;
+    color: $grayish-color;
+    letter-spacing: 0.5px;
+    overflow: hidden;
+    height: 18px;
+    margin-bottom: 15px;
+  }
+  &-metro{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 12px;
+  }
+  &__svg{
+    &:hover{
+      fill: $gray-color;
+    }
+  }
+  &-price{
+    display: inline-block;
+    font-size: 18px;
+    color: #161617;
+    padding: 5px 15px;
+    background-color: #fffbd7;
+  }
+}
+.slick{
+  &-next, &-next:active, &-next:focus, &-next:hover,
+  &-prev, &-prev:active, &-prev:focus, &-prev:hover{
+    background: rgba(0, 0, 0, 0.8);
+  }
+  &-next, &-prev {
+    z-index: 3;
+    height: 35px;
+    width: 35px;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+  &-prev {
+    left: -35px;
+  }
+  &-next{
+    right: -35px;
+  }
+}

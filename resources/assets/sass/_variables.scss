@@ -1,0 +1,34 @@
+
+$font-stack: Gotham Pro;
+
+$white-bg-color: #f1f1f1;
+$grayish-color: #48494a;
+$white-color: #fff;
+$red-color: #e43030;
+$green-color: #69e449;
+$red-bg-color: #ff0000;
+$yellow-color: yellow;
+$secondary-color: #80868e;
+$color-yellow: #ffd200;
+$black-color: #000;
+$blue-color: #13347f;
+$gray-color: #848a92;
+
+@function three-hundred-thirty-five-px() {
+  @return 335px;
+}
+@function thirty-five-px() {
+  @return 30px;
+}
+@function twenty-px() {
+  @return 20px;
+}
+@function four-hundred-fifty-four-px() {
+  @return 454px;
+}
+@function three-hundred-and-ninety-four-px() {
+  @return 394px;
+}
+@function one-hundred-seventy-px() {
+  @return 170px;
+}

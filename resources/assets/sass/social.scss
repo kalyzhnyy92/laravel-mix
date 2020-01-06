@@ -1,0 +1,64 @@
+.social{
+  &__title{
+    color: $secondary-color;
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 20px
+  }
+  &__icon{
+    display: inline-flex;
+    width: one-hundred-seventy-px();
+  }
+  &__icon--facebook{
+    width: 17px;
+    height: 26px;
+    fill: $blue-color;
+    fill-opacity: 0;
+    stroke: $color-yellow;
+    stroke-linejoin: round;
+    stroke-width: 2px;
+    fill-rule: evenodd;
+    &:hover{
+      stroke: $red-bg-color;
+      transition: all 0.5s ease-out;
+    }
+  }
+  &__icon--twitter{
+    width: 22px;
+    height: 19px;
+    fill: $blue-color;
+    fill-opacity: 0;
+    stroke: $color-yellow;
+    stroke-linejoin: round;
+    stroke-width: 2px;
+    fill-rule: evenodd;
+    &:hover{
+      stroke: $red-bg-color;
+      transition: all 0.5s ease-out;
+    }
+  }
+  &__icon--youtube{
+    width: 25px;
+    height: 19px;
+    fill: $blue-color;
+    fill-opacity: 0;
+    stroke: $color-yellow;
+    stroke-linejoin: round;
+    stroke-width: 2px;
+    fill-rule: evenodd;
+    &:hover{
+      stroke: $red-bg-color;
+      transition: all 0.5s ease-out;
+    }
+  }
+  &__icon--instagram{
+    width: 21px;
+    height: 21px;
+    fill: $color-yellow;
+    fill-rule: evenodd;
+    &:hover{
+      fill: $red-bg-color;
+      transition: all 0.5s ease-out;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.developer{
+  display: inline-table;
+  &__wezom{
+    display: inline-block;
+    margin-right: 10px;
+    &:hover{
+      box-shadow: 0 4px 12px 3px rgba(250, 25, 25, 0.45);
+      transition: box-shadow linear 0.3s;
+    }
+  }
+  &__suptext{
+    display: inline-block;
+    vertical-align: middle;
+  }
+  &__text{
+    color: $secondary-color;
+    font-size: 12px;
+  }
+  &__service{
+    color: $black-color;
+    font-weight: bold;
+    font-size: 14px;
+  }
+}

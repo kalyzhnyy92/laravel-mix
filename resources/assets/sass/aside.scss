@@ -1,0 +1,61 @@
+.aside{
+  background-color: $white-color;
+  max-width: four-hundred-fifty-four-px();
+  height: auto;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 5px 4.6px 0.4px rgba(23, 24, 25, 0.05);
+  &:hover{
+    box-shadow: 0 5px 5px 1px rgba(23, 24, 25, 0.50);
+    transition: box-shadow linear 0.3s;
+  }
+  &__photo{
+    position: relative;
+    height: 248px;
+    &:before{
+      @include absolute-full;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(0deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
+    }
+  }
+  &__picture{
+    height: 248px;
+    object-fit: cover;
+    max-width: 100%;
+  }
+  &__kvartira{
+    height: 248px;
+    object-fit: cover;
+    max-width: 100%;
+  }
+  &__sentence{
+    font-size: 16px;
+    color: $white-color;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    &:hover{
+      color: $red-bg-color;
+      text-decoration: none;
+    }
+  }
+  &__suptext{
+    font-size: 14px;
+    color: $grayish-color;
+    line-height: 20px;
+    height: 125px;
+    padding: 24px 24px 0 20px;
+    overflow: hidden;
+  }
+  &__subtext{
+    font-size: 12px;
+    color: $secondary-color;
+    padding: 20px 20px 30px;
+  }
+}
